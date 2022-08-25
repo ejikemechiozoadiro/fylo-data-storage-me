@@ -1,0 +1,64 @@
+:root{
+    --color-primary: hsl(228, 56%, 26%); /*Card background*/
+    --color-secondary: hsl(229, 57%, 11%); /*icon background*/
+    --color-white: #fff;
+    --color-blue: hsl(229, 7%, 55%); /*You've used   of your storage*/
+    --color-paleblue: hsl(243, 100%, 93%); /* 815GB*/
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+}
+
+.card{
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: 7px 70px 7px 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3.2rem 8rem 3rem 3rem;
+    width: fit-content;
+}
+
+.card__content{
+    align-self: flex-start;
+}
+
+.card__logo{
+    align-self: flex-start;
+    width: 100px;
+    margin-bottom: 2.5rem;
+}
+
+.card__image{
+    background: var(--color-secondary);
+    border-radius: 6.5px;
+    margin-right: 1rem;
+}
+
+.card__image1{
+    width: 30px;
+    padding: 0.6rem 0.7rem 0.7rem 0.7rem;
+}
+
+.card__image2{
+    width: 30px;
+    padding: 1.1rem 0.7rem 0.7rem 0.7rem;
+}
+
+.card__image3{
+    width: 32px;
+    padding: 1.2rem 0.7rem 0.8rem 0.7rem;
+}
