@@ -129,6 +129,7 @@ body{
     width: 265px;
     height: 20px;
     color: var(--color-white);
+    overflow: hidden;
 }
 
 @media screen and (min-width:1024px){
@@ -172,7 +173,7 @@ body{
     width: 190px;
     position: relative;
     top: -25px;
-    left: 1.2px;
+    left: 1.1px;
 }
 
 @media screen and (min-width:1024px){
@@ -201,6 +202,7 @@ body{
     position: relative;
     top: -4rem;
     width: fit-content;
+    overflow: hidden;
 }
 
 @media screen and (min-width:1024px){
@@ -227,3 +229,54 @@ body{
     opacity: 0.5;
 
 }
+
+
+
+
+
+/*Animation*/
+
+/*first animation*/
+@keyframes slide {
+    0% {
+        transform: translate(-90px);
+    }
+
+}
+
+@media screen and (min-width:768px){
+    @keyframes slide {
+        0% {
+            transform: translate(-120px);
+        }
+    }
+}
+
+.storage__line::before,
+.storage__line::after{
+    animation: slide 2s ease-out 1;
+}
+/*first animatin ends*/
+
+
+/*Second animation*/
+@keyframes hidden-left {
+    0% {
+        transform: translate(-2000px);
+    }
+}
+
+@keyframes hidden-right {
+    0% {
+        transform: translate(2000px);
+    }
+}
+
+.data__no{
+    animation: hidden-left 2.2s ease-out 1;
+}
+
+.data__text{
+    animation: hidden-right 2.2s ease-out 1;
+}
+/*second animation ends**/
